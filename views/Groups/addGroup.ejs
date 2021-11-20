@@ -1,0 +1,80 @@
+<% layout('layout/boilerplate') %>
+
+<div class="card">
+  <div class="card-header">Add Group</div>
+  <div class="card-body">
+    <form action="" method="post">
+      <div class="mb-3">
+        <label for="grouptitle" class="form-label">Group Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="grouptitle"
+          name="Groups[group]"
+          placeholder="Enter the group name"
+        />
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-header">Members</div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Member Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="memberEmail" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="memberEmail"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <button type="button" id="addMemberbtn" class="btn btn-primary">
+              Add Members
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="members"></div>
+
+      <div class="card mt-3">
+        <div class="card-header">Add Category</div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="expenseName" class="form-label">Category Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="expenseName"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="expenseAmount" class="form-label">Total Amount</label>
+            <input
+              type="number"
+              class="form-control"
+              id="expenseAmount"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <button type="button" id="addExpensesbtn" class="btn btn-primary">
+              Add Category
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="expenses"></div>
+      <button type="submit" class="btn btn-primary mt-3">submit</button>
+    </form>
+  </div>
+</div>
